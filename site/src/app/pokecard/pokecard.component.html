@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{pokedata.name}}</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{pokedata.sprites.front_default}}" alt="Photo of a {{pokedata.name}}">
+      <mat-card-content>
+        <p>
+          The pokemon {{pokedata.name}} has {{pokedata.moves.length}} different moves that it is able to learn.
+          They have been apart of {{pokedata.game_indices.length}} games since the time of this monsters inception.
+          They weight about {{pokedata.weight}} pounds and is {{pokedata.height}} tall.
+        </p>
+      </mat-card-content>
+</mat-card>

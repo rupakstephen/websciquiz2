@@ -1,0 +1,9 @@
+<mat-toolbar>
+  <span>Mini-PokeDex</span>
+</mat-toolbar>
+<div class="pokediv1" *ngIf=finished>
+  <app-pokecard *ngFor="let poke of pokemon" [pokedata]="poke"></app-pokecard>
+</div>
+<button *ngIf=beginning (click) = prevFive()>Previous 5 please!</button>
+<button (click) = nextFive()>Next 5 please!</button>
+
